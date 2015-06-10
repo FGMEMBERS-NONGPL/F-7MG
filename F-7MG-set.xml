@@ -26,6 +26,16 @@ released under license:  Creative Commons CC-BY-NC-SA
    <splash-texture>Aircraft/F-7MG/F-7MG-splash.png</splash-texture>
   </startup>
 
+  <systems>
+   <refuel>
+     <contact type="bool">false</contact>
+     <type>boom</type>
+   </refuel>
+   <autopilot>
+    <path>Aircraft/F-7MG/systems/autopilot5.xml</path>
+   </autopilot>
+ </systems>
+
   <submodels> 
     <serviceable type="bool">true</serviceable>
     <path>Aircraft/F-7MG/submodels.xml</path>
@@ -52,7 +62,7 @@ released under license:  Creative Commons CC-BY-NC-SA
    <path>Aircraft/F-7MG/Models/F-7MG.xml</path>
   </model>
 
-  <chase-distance-m>-20</chase-distance-m>
+  <chase-distance-m>-17</chase-distance-m>
 
   <flaps>
    <setting>0.000</setting>
@@ -297,9 +307,6 @@ released under license:  Creative Commons CC-BY-NC-SA
        <dump>
          <armed type="double">0</armed>
        </dump>
-       <NWS>
-         <engaged type="double">0</engaged>
-       </NWS>
     <canopy>
       <command type="double">0</command>
       <position type="double">0</position>
